@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="heading">WEATHER APP</p>
+    <div class="btns">
+        <button class="btn weatherBtn bg">Your weather</button>
+        <button class="btn searchBtn">Search</button>
+    </div>
+
+    <div class="inputContainer">
+        <input type="text" class="userinput" placeholder="Enter your city name">
+        <img class="searchWeather" src="./Icons/search.png" alt="">
+    </div>
+
+    <p class="textalign diserror"></p>
+    <div class="loadImgDiv"> 
+        <img class="load-img" src="./Icons/loading.gif" alt="">
+    </div>
+
+    
+    <div class="resultcontainer">
+        <p class="cityname">DELHI</p>
+        <div class="tempratureDiv"> 
+            <span class="temprature"></span> <span><img class="celsiusImg" src="./Icons/celsius.png" alt=""> </span> 
+        </div>
+        <div class="weatherboxs">
+            <div class="box Windspeed">
+                <p class="textalign"><img src="./Icons/wind.png" alt=""></p>
+                <p class="textalign">Windspeed</p>
+                
+                <p class="windresult textalign"></p>
+            </div>
+            <div class="box Humidity">
+                <p class="textalign"><img src="./Icons/humidity.png" alt=""></p>
+                <p class="textalign">Humidity</p>
+                <p class="humidityresult textalign"></p>
+            </div>
+            <div class="box Clouds">
+                <p class="textalign"><img src="./Icons/cloud.png" alt=""></p>
+                <p class="textalign">Clouds</p>
+                <p class="cloudresult textalign"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
